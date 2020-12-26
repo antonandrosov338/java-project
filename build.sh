@@ -9,7 +9,7 @@ mkdir -p bin/obj bin/build
 
 #BUILD
 echo "build obj" && \
-javac -classpath "${LIBS}/*.jar" -d bin/obj $JAVA_FILES/*.java && \
+javac -classpath $LIBS/*.jar -d bin/obj $JAVA_FILES/*.java && \
 
 PACKAGE=`echo $PACKAGE | tr '/' '.'` && \
 
