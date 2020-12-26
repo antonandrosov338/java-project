@@ -19,7 +19,7 @@ echo class-path: $LIBS/*.jar >>bin/build/manifest.mf && \
 echo "build jar" && \
 jar -cmf bin/build/manifest.mf bin/build/$MAIN_CLASS.jar -C bin/obj . && \
 
-# rm bin/build/manifest.mf && \
+rm bin/build/manifest.mf && \
 
 #START
 echo "start" && \
